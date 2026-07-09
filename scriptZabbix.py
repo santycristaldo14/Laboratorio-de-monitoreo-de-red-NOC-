@@ -10,17 +10,28 @@ ZABBIX_HOST = "MK HOMELAB"   # el nombre EXACTO del host configurado en Zabbix
 
 
 def get_top_talkers(top_n=5):
-    # 1. hacer el POST a ntopng (el mismo que probamos con curl)
-    # 2. filtrar IPs link-local (fe80) y multicast (ff02)
-    # 3. ordenar por tx+rx descendente
-    # 4. devolver los primeros top_n
-    pass
+    url = NTOPNG_URL
+    payload = {"ifid": 0, "field_alias": "ip,bytes.sent=tx,bytes.rcvd=rx"}
+    auth = (NTOPNG_USER, NTOPNG_PASS)
+
+    response = requests.post(url, auth=auth, json=payload)
+    data = response.json()["rsp"]
+
+    topTalkers = []
+    for host in data:
+        if not host["ip"].startswith(("fe80", "ff02")):
+            topTalkers.append(host)
+
+    topTalkers = sorted(
+        topTalkers, key=lambda h: h["tx"] + h["rx"], reverse=True)
+
+    return topTalkers[:top_n]
 
 
 def send_to_zabbix(top_talkers):
     # por cada host del top, armar un ZabbixMetric con:
     #   - ZABBIX_HOST (el nombre del host en zabbix)
-    #   - una key tipo "top_talker[1,ip]" / "top_talker[1,bytes]"
+    #   - una key tipo "top_talker[,ip]" / "top_talker[1,bytes]"
     #   - el valor correspondiente
     # después ZabbixSender(ZABBIX_SERVER).send([...metrics...])
     pass
