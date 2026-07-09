@@ -2,11 +2,11 @@ import requests
 from pyzabbix import ZabbixMetric, ZabbixSender
 
 NTOPNG_URL = "http://localhost:3000/lua/rest/v2/get/host/custom_data.lua"
-NTOPNG_USER = "admin"
-NTOPNG_PASS = "Dgsri2026"   # después lo movemos a variable de entorno
+NTOPNG_USER = ""
+NTOPNG_PASS = ""   # después lo movemos a variable de entorno
 
 ZABBIX_SERVER = "localhost"
-ZABBIX_HOST = "MK HOMELAB"   # el nombre EXACTO del host configurado en Zabbix
+ZABBIX_HOST = ""   # el nombre EXACTO del host configurado en Zabbix
 
 
 def get_top_talkers(top_n=5):
