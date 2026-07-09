@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+
+  # Recibe el NetFlow crudo del Mikrotik (puerto 2055/udp) y lo traduce
+  # a un formato que ntopng entiende, publicándolo por ZMQ (puerto 5556).
+  netflow2ng:
+    image: synfinatic/netflow2ng:latest
+    container_name: netflow2ng
+    restart: unless-stopped
+    entrypoint: /netflow2ng
+    # host networking es obligatorio: si Docker hace NAT, el puerto de origen
+    # de los paquetes NetFlow cambia y netflow2ng no los puede procesar bien.
+    network_mode: host
+
+  # Base de datos en memoria que usa ntopng para guardar estado (contadores,
+  # cache de hosts, etc). No hay que tocarla, solo tiene que estar corriendo.
+  redis:
+    image: redis:alpine
+    container_name: redis
+    restart: unless-stopped
+    network_mode: host
+
+  # El dashboard web. Se conecta al ZMQ de netflow2ng en localhost:5556
+  # (funciona porque los tres contenedores comparten la red del host).
+  ntopng:
+    image: ntop/ntopng:latest
+    container_name: ntopng
+    restart: unless-stopped
+    network_mode: host
+    depends_on:
+      - netflow2ng
+      - redis
+    command:
+      - "--community"
+      - "--redis"
+      - "localhost"
+      - "--interface"
+      - "tcp://localhost:5556"
+      - "--local-networks"
+      - "192.168.88.0/24"
