@@ -1,4 +1,6 @@
-version: "3.8"
+networks:
+  monitoring-net: 
+    external: true 
 
 services:
 
@@ -19,7 +21,8 @@ services:
     image: redis:alpine
     container_name: redis
     restart: unless-stopped
-    network_mode: host
+    networks: 
+      - monitoring-net
 
   # El dashboard web. Se conecta al ZMQ de netflow2ng en localhost:5556
   # (funciona porque los tres contenedores comparten la red del host).
@@ -27,15 +30,21 @@ services:
     image: ntop/ntopng:latest
     container_name: ntopng
     restart: unless-stopped
-    network_mode: host
+    networks:
+      - monitoring-net
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     depends_on:
       - netflow2ng
       - redis
+
+    ports:
+      - "3000:3000"
     command:
       - "--community"
       - "--redis"
       - "localhost"
       - "--interface"
-      - "tcp://localhost:5556"
+      - "tcp://host.docker.internal:5556"
       - "--local-networks"
       - "192.168.88.0/24"

@@ -1,8 +1,6 @@
-version: "3.8"
-
 networks:
-  zabbix-net:
-    driver: bridge
+  monitoring-net:
+    external: true 
 
 services:
 
@@ -13,7 +11,7 @@ services:
     container_name: zabbix-postgres
     restart: unless-stopped
     networks:
-      - zabbix-net
+      - monitoring-net
     environment:
       POSTGRES_USER: zabbix
       POSTGRES_PASSWORD: zabbix_pass
@@ -28,7 +26,7 @@ services:
     container_name: zabbix-server
     restart: unless-stopped
     networks:
-      - zabbix-net
+      - monitoring-net
     depends_on:
       - postgres
     environment:
@@ -46,7 +44,7 @@ services:
     container_name: zabbix-web
     restart: unless-stopped
     networks:
-      - zabbix-net
+      - monitoring-net 
     depends_on:
       - postgres
       - zabbix-server
