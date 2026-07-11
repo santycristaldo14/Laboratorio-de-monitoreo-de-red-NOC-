@@ -1,0 +1,200 @@
+zabbix-server  |    217:20260710:033448.015 In zbx_pp_manager_process_finished()
+zabbix-server  |    217:20260710:033448.015 End of zbx_pp_manager_process_finished() values_num:0
+zabbix-server  |    217:20260710:033448.015 In zbx_ipc_service_recv() timeout:1.000
+zabbix-server  |    218:20260710:033448.015 End of zbx_ipc_service_recv():2
+zabbix-server  |    218:20260710:033448.015 In zbx_ipc_service_recv() timeout:1.000
+zabbix-server  |    233:20260710:033448.021 End of zbx_ipc_async_socket_recv():0
+zabbix-server  |    233:20260710:033448.021 zbx_setproctitle() title:'poller #1 [got 0 values in 0.000206 sec, getting values]'
+zabbix-server  |    233:20260710:033448.021 In get_values()
+zabbix-server  |    233:20260710:033448.021 In DCconfig_get_poller_items() poller_type:0
+zabbix-server  |    233:20260710:033448.021 End of DCconfig_get_poller_items():0
+zabbix-server  |    233:20260710:033448.021 In DCconfig_get_poller_nextcheck() poller_type:0
+zabbix-server  |    233:20260710:033448.021 End of DCconfig_get_poller_nextcheck():1783654489
+zabbix-server  |    233:20260710:033448.021 End of get_values():0
+zabbix-server  |    233:20260710:033448.021 zbx_setproctitle() title:'poller #1 [got 0 values in 0.000046 sec, idle 1 sec]'
+zabbix-server  |    233:20260710:033448.022 In zbx_ipc_async_socket_recv() timeout:1
+zabbix-server  |    236:20260710:033448.022 End of zbx_ipc_async_socket_recv():0
+zabbix-server  |    236:20260710:033448.022 zbx_setproctitle() title:'poller #4 [got 0 values in 0.000209 sec, getting values]'
+zabbix-server  |    236:20260710:033448.023 In get_values()
+zabbix-server  |    236:20260710:033448.023 In DCconfig_get_poller_items() poller_type:0
+zabbix-server  |    236:20260710:033448.023 End of DCconfig_get_poller_items():0
+zabbix-server  |    236:20260710:033448.023 In DCconfig_get_poller_nextcheck() poller_type:0
+zabbix-server  |    236:20260710:033448.023 End of DCconfig_get_poller_nextcheck():1783654489
+zabbix-server  |    236:20260710:033448.023 End of get_values():0
+zabbix-server  |    236:20260710:033448.023 zbx_setproctitle() title:'poller #4 [got 0 values in 0.000049 sec, idle 1 sec]'
+zabbix-server  |    236:20260710:033448.023 In zbx_ipc_async_socket_recv() timeout:1
+zabbix-server  |    237:20260710:033448.049 End of zbx_ipc_async_socket_recv():0
+zabbix-server  |    237:20260710:033448.049 zbx_setproctitle() title:'poller #5 [got 0 values in 0.000166 sec, getting values]'
+zabbix-server  |    237:20260710:033448.049 In get_values()
+zabbix-server  |    237:20260710:033448.049 In DCconfig_get_poller_items() poller_type:0
+zabbix-server  |    237:20260710:033448.049 End of DCconfig_get_poller_items():0
+zabbix-server  |    237:20260710:033448.049 In DCconfig_get_poller_nextcheck() poller_type:0
+zabbix-server  |    237:20260710:033448.049 End of DCconfig_get_poller_nextcheck():1783654489
+zabbix-server  |    237:20260710:033448.049 End of get_values():0
+zabbix-server  |    237:20260710:033448.049 zbx_setproctitle() title:'poller #5 [got 0 values in 0.000056 sec, idle 1 sec]'
+zabbix-server  |    237:20260710:033448.049 In zbx_ipc_async_socket_recv() timeout:1
+zabbix-server  |    227:20260710:033448.276 zbx_setproctitle() title:'history syncer #3 [processed 0 values, 0 triggers in 0.000221 sec, syncing history]'
+zabbix-server  |    227:20260710:033448.276 In zbx_sync_history_cache() history_num:5
+zabbix-server  |    227:20260710:033448.277 In substitute_simple_macros_impl() data:'365d'
+zabbix-server  |    227:20260710:033448.277 End substitute_simple_macros_impl() data:'365d'
+zabbix-server  |    227:20260710:033448.277 In substitute_simple_macros_impl() data:'7d'
+zabbix-server  |    227:20260710:033448.277 End substitute_simple_macros_impl() data:'7d'
+zabbix-server  |    227:20260710:033448.277 In substitute_simple_macros_impl() data:'365d'
+zabbix-server  |    227:20260710:033448.277 End substitute_simple_macros_impl() data:'365d'
+zabbix-server  |    227:20260710:033448.277 In substitute_simple_macros_impl() data:'7d'
+zabbix-server  |    227:20260710:033448.277 End substitute_simple_macros_impl() data:'7d'
+zabbix-server  |    227:20260710:033448.277 In substitute_simple_macros_impl() data:'365d'
+zabbix-server  |    227:20260710:033448.277 End substitute_simple_macros_impl() data:'365d'
+zabbix-server  |    227:20260710:033448.277 In substitute_simple_macros_impl() data:'7d'
+zabbix-server  |    227:20260710:033448.277 End substitute_simple_macros_impl() data:'7d'
+zabbix-server  |    227:20260710:033448.278 In substitute_simple_macros_impl() data:'365d'
+zabbix-server  |    227:20260710:033448.278 End substitute_simple_macros_impl() data:'365d'
+zabbix-server  |    227:20260710:033448.278 In substitute_simple_macros_impl() data:'7d'
+zabbix-server  |    227:20260710:033448.278 End substitute_simple_macros_impl() data:'7d'
+zabbix-server  |    227:20260710:033448.278 In substitute_simple_macros_impl() data:'365d'
+zabbix-server  |    227:20260710:033448.278 End substitute_simple_macros_impl() data:'365d'
+zabbix-server  |    227:20260710:033448.278 In substitute_simple_macros_impl() data:'7d'
+zabbix-server  |    227:20260710:033448.278 End substitute_simple_macros_impl() data:'7d'
+zabbix-server  |    227:20260710:033448.278 In DCmass_prepare_history() history_num:5
+zabbix-server  |    227:20260710:033448.278 End of DCmass_prepare_history()
+zabbix-server  |    227:20260710:033448.278 In DBmass_add_history()
+zabbix-server  |    227:20260710:033448.278 In zbx_history_add_values()
+zabbix-server  |    227:20260710:033448.278 query [txnlev:1] [begin;]
+zabbix-server  |    225:20260710:033448.278 zbx_setproctitle() title:'history syncer #1 [processed 0 values, 0 triggers in 0.000159 sec, syncing history]'
+zabbix-server  |    225:20260710:033448.278 In zbx_sync_history_cache() history_num:5
+zabbix-server  |    225:20260710:033448.278 zbx_setproctitle() title:'history syncer #1 [processed 0 values, 0 triggers in 0.000273 sec, idle 1 sec]'
+zabbix-server  |    226:20260710:033448.279 zbx_setproctitle() title:'history syncer #2 [processed 0 values, 0 triggers in 0.000182 sec, syncing history]'
+zabbix-server  |    226:20260710:033448.279 In zbx_sync_history_cache() history_num:5
+zabbix-server  |    227:20260710:033448.279 query [txnlev:1] [insert into history (itemid,clock,ns,value) values (23268,1783654488,14154720,0),(23628,1783654488,14797676,0.90482943431539997),(25668,1783654488,14636214,0.085212748377104283);
+zabbix-server  | ]
+zabbix-server  |    226:20260710:033448.279 zbx_setproctitle() title:'history syncer #2 [processed 0 values, 0 triggers in 0.000232 sec, idle 1 sec]'
+zabbix-server  |    227:20260710:033448.280 query [txnlev:1] [commit;]
+zabbix-server  |    227:20260710:033448.287 End of zbx_history_add_values()
+zabbix-server  |    227:20260710:033448.287 End of DBmass_add_history()
+zabbix-server  |    227:20260710:033448.287 In DCmass_update_trends()
+zabbix-server  |    227:20260710:033448.287 End of DCmass_update_trends()
+zabbix-server  |    227:20260710:033448.287 query [txnlev:1] [begin;]
+zabbix-server  |    227:20260710:033448.288 query [txnlev:1] [commit;]
+zabbix-server  |    227:20260710:033448.288 In DCupdate_trends()
+zabbix-server  |    227:20260710:033448.288 End of DCupdate_trends()
+zabbix-server  |    227:20260710:033448.288 query [txnlev:1] [begin;]
+zabbix-server  |    228:20260710:033448.288 zbx_setproctitle() title:'history syncer #4 [processed 5 values, 4 triggers in 0.014198 sec, syncing history]'
+zabbix-server  |    228:20260710:033448.289 In zbx_sync_history_cache() history_num:5
+zabbix-server  |    227:20260710:033448.289 In DBmass_update_items()
+zabbix-server  |    227:20260710:033448.289 End of DBmass_update_items()
+zabbix-server  |    227:20260710:033448.289 In zbx_process_events() events_num:0
+zabbix-server  |    227:20260710:033448.289 End of zbx_process_events() processed:0
+zabbix-server  |    227:20260710:033448.289 query [txnlev:1] [commit;]
+zabbix-server  |    228:20260710:033448.289 zbx_setproctitle() title:'history syncer #4 [processed 0 values, 0 triggers in 0.000285 sec, idle 1 sec]'
+zabbix-server  |    227:20260710:033448.289 query [txnlev:1] [begin;]
+zabbix-server  |    227:20260710:033448.289 In recalculate_triggers()
+zabbix-server  |    227:20260710:033448.290 In zbx_link_triggers_with_functions() trigger_order_num:4
+zabbix-server  |    227:20260710:033448.290 End of zbx_link_triggers_with_functions() triggers_func_pos_num:4
+zabbix-server  |    227:20260710:033448.290 In zbx_evaluate_expressions() tr_num:4
+zabbix-server  |    227:20260710:033448.290 In substitute_functions()
+zabbix-server  |    227:20260710:033448.290 In zbx_extract_functionids() tr_num:4
+zabbix-server  |    227:20260710:033448.290 End of zbx_extract_functionids() functionids_num:4
+zabbix-server  |    227:20260710:033448.290 In zbx_populate_function_items() functionids_num:4
+zabbix-server  |    227:20260710:033448.290 End of zbx_populate_function_items() ifuncs_num:4
+zabbix-server  |    227:20260710:033448.290 In zbx_evaluate_item_functions() funcs_num:4
+zabbix-server  |    227:20260710:033448.290 In zbx_dc_expand_user_macros() '10m'
+zabbix-server  |    227:20260710:033448.290 End of zbx_dc_expand_user_macros() '10m'
+zabbix-server  |    227:20260710:033448.290 In evaluate_function() function:'avg(/Zabbix server/zabbix[process,timer,avg,busy],10m)' ts:'2026.07.10 03:34:48.014154720'
+zabbix-server  |    227:20260710:033448.290 In evaluate_AVG()
+zabbix-server  |    227:20260710:033448.290 In get_function_parameter_hist_range() parameters:'10m' Nparam:1
+zabbix-server  |    227:20260710:033448.290 get_function_parameter_hist_range() type:sec value:600 timeshift:0
+zabbix-server  |    227:20260710:033448.290 End of get_function_parameter_hist_range():SUCCEED
+zabbix-server  |    227:20260710:033448.290 In zbx_vc_get_values() itemid:23268 value_type:0 count:0 period:600 end_timestamp '2026.07.10 03:34:48.014154720'
+zabbix-server  |    227:20260710:033448.290 End of zbx_vc_get_values():SUCCEED count:8 cached:1
+zabbix-server  |    227:20260710:033448.290 End of evaluate_AVG():SUCCEED
+zabbix-server  |    227:20260710:033448.290 End of evaluate_function():SUCCEED value:'0.062228714351166337' of type:'double'
+zabbix-server  |    227:20260710:033448.290 In zbx_dc_expand_user_macros() '10m'
+zabbix-server  |    227:20260710:033448.290 End of zbx_dc_expand_user_macros() '10m'
+zabbix-server  |    227:20260710:033448.290 In evaluate_function() function:'avg(/Zabbix server/zabbix[process,preprocessing worker,avg,busy],10m)' ts:'2026.07.10 03:34:48.014636214'
+zabbix-server  |    227:20260710:033448.290 In evaluate_AVG()
+zabbix-server  |    227:20260710:033448.291 In get_function_parameter_hist_range() parameters:'10m' Nparam:1
+zabbix-server  |    227:20260710:033448.291 get_function_parameter_hist_range() type:sec value:600 timeshift:0
+zabbix-server  |    227:20260710:033448.291 End of get_function_parameter_hist_range():SUCCEED
+zabbix-server  |    227:20260710:033448.291 In zbx_vc_get_values() itemid:25668 value_type:0 count:0 period:600 end_timestamp '2026.07.10 03:34:48.014636214'
+zabbix-server  |    227:20260710:033448.291 End of zbx_vc_get_values():SUCCEED count:8 cached:1
+zabbix-server  |    227:20260710:033448.291 End of evaluate_AVG():SUCCEED
+zabbix-server  |    227:20260710:033448.291 End of evaluate_function():SUCCEED value:'0.08436836235564435' of type:'double'
+zabbix-server  |    227:20260710:033448.291 End of zbx_evaluate_item_functions()
+zabbix-server  |    227:20260710:033448.291 In zbx_substitute_functions_results() ifuncs_num:4 tr_num:4
+zabbix-server  |    227:20260710:033448.291 zbx_substitute_functions_results() expression[0]:'{13205}>75' => 'ERROR(Cannot evaluate function avg(/Zabbix server/zabbix[process,vmware collector,avg,busy],10m): item is not supported.)>75'
+zabbix-server  |    227:20260710:033448.291 zbx_substitute_functions_results() expression[0]:'{13205}<65' => 'ERROR(Cannot evaluate function avg(/Zabbix server/zabbix[process,vmware collector,avg,busy],10m): item is not supported.)<65'
+zabbix-server  |    227:20260710:033448.291 zbx_substitute_functions_results() expression[1]:'{13199}>75' => '0.062228714351166337>75'
+zabbix-server  |    227:20260710:033448.291 zbx_substitute_functions_results() expression[1]:'{13199}<65' => '0.062228714351166337<65'
+zabbix-server  |    227:20260710:033448.291 zbx_substitute_functions_results() expression[2]:'{13231}>75' => '0.08436836235564435>75'
+zabbix-server  |    227:20260710:033448.291 zbx_substitute_functions_results() expression[2]:'{13231}<65' => '0.08436836235564435<65'
+zabbix-server  |    227:20260710:033448.291 zbx_substitute_functions_results() expression[3]:'{32883}>75' => 'ERROR(Cannot evaluate function avg(/Zabbix server/zabbix[process,connector manager,avg,busy],10m): item is not supported.)>75'
+zabbix-server  |    227:20260710:033448.291 zbx_substitute_functions_results() expression[3]:'{32883}<65' => 'ERROR(Cannot evaluate function avg(/Zabbix server/zabbix[process,connector manager,avg,busy],10m): item is not supported.)<65'
+zabbix-server  |    227:20260710:033448.291 End of zbx_substitute_functions_results()
+zabbix-server  |    227:20260710:033448.291 End of substitute_functions()
+zabbix-server  |    227:20260710:033448.291 evaluate_expression(): 0.062228714351166337>75 => 0
+zabbix-server  |    227:20260710:033448.291 evaluate_expression(): 0.08436836235564435>75 => 0
+zabbix-server  |    227:20260710:033448.291 zbx_evaluate_expressions():expression [{13205}>75] cannot be evaluated: Cannot evaluate function avg(/Zabbix server/zabbix[process,vmware collector,avg,busy],10m): item is not supported.
+zabbix-server  |    227:20260710:033448.292 zbx_evaluate_expressions():expression [{32883}>75] cannot be evaluated: Cannot evaluate function avg(/Zabbix server/zabbix[process,connector manager,avg,busy],10m): item is not supported.
+zabbix-server  |    227:20260710:033448.292 End of zbx_evaluate_expressions()
+zabbix-server  |    227:20260710:033448.292 In zbx_process_triggers() values_num:4
+zabbix-server  |    227:20260710:033448.292 In zbx_process_trigger() triggerid:13436 value:0(1) new_value:2
+zabbix-server  |    227:20260710:033448.292 End of zbx_process_trigger():FAIL flags:0
+zabbix-server  |    227:20260710:033448.292 In zbx_process_trigger() triggerid:13483 value:0(0) new_value:3
+zabbix-server  |    227:20260710:033448.292 End of zbx_process_trigger():FAIL flags:0
+zabbix-server  |    227:20260710:033448.292 In zbx_process_trigger() triggerid:13571 value:0(0) new_value:3
+zabbix-server  |    227:20260710:033448.292 End of zbx_process_trigger():FAIL flags:0
+zabbix-server  |    227:20260710:033448.292 In zbx_process_trigger() triggerid:23209 value:0(1) new_value:2
+zabbix-server  |    227:20260710:033448.292 End of zbx_process_trigger():FAIL flags:0
+zabbix-server  |    227:20260710:033448.292 End of zbx_process_triggers()
+zabbix-server  |    227:20260710:033448.292 End of recalculate_triggers()
+zabbix-server  |    227:20260710:033448.292 In zbx_process_events() events_num:0
+zabbix-server  |    227:20260710:033448.292 End of zbx_process_events() processed:0
+zabbix-server  |    227:20260710:033448.292 query [txnlev:1] [commit;]
+zabbix-server  |    227:20260710:033448.293 zbx_setproctitle() title:'history syncer #3 [processed 5 values, 4 triggers in 0.016557 sec, idle 1 sec]'
+zabbix-server  |    245:20260710:033448.358 zbx_setproctitle() title:'alert syncer [queuing alerts]'
+zabbix-server  |    245:20260710:033448.358 In am_db_get_alerts()
+zabbix-server  |    245:20260710:033448.358 query [txnlev:1] [begin;]
+zabbix-server  |    245:20260710:033448.359 query [txnlev:1] [select a.alertid,a.mediatypeid,a.sendto,a.subject,a.message,a.status,a.retries,e.source,e.object,e.objectid,a.parameters,a.eventid,a.p_eventid from alerts a left join events e on a.eventid=e.eventid where alerttype=0 and a.status=3 order by a.alertid]
+zabbix-server  |    213:20260710:033448.360 End of zbx_ipc_service_recv():2
+zabbix-server  |    213:20260710:033448.360 In zbx_ipc_service_recv() timeout:1.000
+zabbix-server  |    245:20260710:033448.361 query [txnlev:1] [commit;]
+zabbix-server  |    245:20260710:033448.362 End of am_db_get_alerts():SUCCEED alerts:0
+zabbix-server  |    245:20260710:033448.362 In am_db_flush_results()
+zabbix-server  |    245:20260710:033448.362 In zbx_ipc_socket_write()
+zabbix-server  |    213:20260710:033448.362 End of zbx_ipc_service_recv():1
+zabbix-server  |    213:20260710:033448.362 In am_flush_results() results:0
+zabbix-server  |    213:20260710:033448.362 In zbx_ipc_client_send() clientid:7
+zabbix-server  |    213:20260710:033448.362 End of zbx_ipc_client_send():SUCCEED
+zabbix-server  |    213:20260710:033448.362 End of am_flush_results()
+zabbix-server  |    213:20260710:033448.362 In zbx_ipc_service_recv() timeout:1.000
+zabbix-server  |    245:20260710:033448.362 End of zbx_ipc_socket_write():SUCCEED
+zabbix-server  |    245:20260710:033448.363 In zbx_ipc_socket_read()
+zabbix-server  |    245:20260710:033448.363 End of zbx_ipc_socket_read():SUCCEED
+zabbix-server  |    245:20260710:033448.363 End of am_db_flush_results() flushed:0
+zabbix-server  |    245:20260710:033448.363 zbx_setproctitle() title:'alert syncer [queued 0 alerts(s), flushed 0 result(s) in 0.004442 sec, idle 1 sec]'
+zabbix-server  |    210:20260710:033448.553 End of zbx_ipc_service_recv():2
+zabbix-server  |    210:20260710:033448.553 In ha_check_nodes() ha_status:active db_status:0
+zabbix-server  |    210:20260710:033448.553 query [txnlev:1] [begin;]
+zabbix-server  |    210:20260710:033448.553 query [txnlev:1] [select ha_nodeid,name,status,lastaccess,address,port,ha_sessionid from ha_node order by ha_nodeid for update]
+zabbix-server  |    210:20260710:033448.554 query [txnlev:1] [select ha_failover_delay,auditlog_enabled from config]
+zabbix-server  |    210:20260710:033448.554 In ha_db_get_time()
+zabbix-server  |    210:20260710:033448.554 query [txnlev:1] [select cast(extract(epoch from now()) as int) from config]
+zabbix-server  |    210:20260710:033448.554 End of ha_db_get_time():SUCCEED db_time:1783654489
+zabbix-server  |    210:20260710:033448.554 query [txnlev:1] [update ha_node set lastaccess=cast(extract(epoch from now()) as int) where ha_nodeid='cmrbcyjbi00015rpabuzp8ewu']
+zabbix-server  |      7:20260710:033448.554 End of zbx_ipc_service_recv():2
+zabbix-server  |      7:20260710:033448.554 In zbx_ha_dispatch_message()
+zabbix-server  |      7:20260710:033448.554 End of zbx_ha_dispatch_message():SUCCEED
+zabbix-server  |      7:20260710:033448.555 In zbx_ipc_service_recv() timeout:1.000
+zabbix-server  |    210:20260710:033448.555 query [txnlev:1] [commit;]
+zabbix-server  |    210:20260710:033448.561 End of ha_check_nodes() nodeid:cmrbcyjbi00015rpabuzp8ewu ha_status:active db_status:0
+zabbix-server  |    210:20260710:033448.561 In zbx_ipc_async_socket_send()
+zabbix-server  |    210:20260710:033448.561 In zbx_ipc_client_send() clientid:0
+zabbix-server  |    210:20260710:033448.561 End of zbx_ipc_client_send():SUCCEED
+zabbix-server  |    210:20260710:033448.562 End of zbx_ipc_async_socket_send():SUCCEED
+zabbix-server  |    210:20260710:033448.562 In zbx_ipc_async_socket_flush() timeout:10
+zabbix-server  |    210:20260710:033448.562 End of zbx_ipc_async_socket_flush():0
+zabbix-server  |    210:20260710:033448.562 In zbx_ipc_service_recv() timeout:0.998
+zabbix-server  |      7:20260710:033448.562 End of zbx_ipc_service_recv():1
+zabbix-server  |      7:20260710:033448.562 In zbx_ha_dispatch_message()
+zabbix-server  |      7:20260710:033448.562 End of zbx_ha_dispatch_message():SUCCEED
+zabbix-server  |      7:20260710:033448.562 In zbx_ipc_service_recv() timeout:1.000

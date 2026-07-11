@@ -36,6 +36,7 @@ services:
       POSTGRES_USER: zabbix
       POSTGRES_PASSWORD: zabbix_pass
       POSTGRES_DB: zabbix
+      ZBX_DEBUGLEVEL: 4
     ports:
       - "10051:10051"   # puerto donde escucha a los agentes/proxies
 
@@ -57,7 +58,7 @@ services:
       ZBX_SERVER_HOST: zabbix-server
       PHP_TZ: America/Argentina/Buenos_Aires
     ports:
-      - "8080:8080"   # acceso al dashboard: http://localhost:8080
+      - "8081:8080"   # acceso al dashboard: http://localhost:8081
 
 volumes:
   zabbix_db_data:
