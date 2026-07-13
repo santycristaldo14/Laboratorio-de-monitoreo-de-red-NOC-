@@ -1,9 +1,8 @@
 networks:
   monitoring-net:
-    external: true 
+    external: true
 
 services:
-
   # Base de datos donde Zabbix guarda toda su configuración, histórico de
   # métricas y eventos. Postgres en vez de MySQL porque consume menos RAM.
   postgres:
@@ -36,7 +35,7 @@ services:
       POSTGRES_DB: zabbix
       ZBX_DEBUGLEVEL: 4
     ports:
-      - "10051:10051"   # puerto donde escucha a los agentes/proxies
+      - "10051:10051" # puerto donde escucha a los agentes/proxies
 
   # El dashboard web (nginx + PHP ya empaquetados en la imagen oficial).
   zabbix-web:
@@ -44,7 +43,7 @@ services:
     container_name: zabbix-web
     restart: unless-stopped
     networks:
-      - monitoring-net 
+      - monitoring-net
     depends_on:
       - postgres
       - zabbix-server
@@ -56,7 +55,23 @@ services:
       ZBX_SERVER_HOST: zabbix-server
       PHP_TZ: America/Argentina/Buenos_Aires
     ports:
-      - "8081:8080"   # acceso al dashboard: http://localhost:8081
+      - "8081:8080" # acceso al dashboard: http://localhost:8081
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    restart: unless-stopped
+    networks:
+      - monitoring-net
+    depends_on:
+      - zabbix-server
+    enviroment:
+      GF_INSTALL_PLUGINS: "alexanderzobnin-zabbix-app"
+    ports:
+      - "3001:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
 
 volumes:
   zabbix_db_data:
+  grafana_data:
