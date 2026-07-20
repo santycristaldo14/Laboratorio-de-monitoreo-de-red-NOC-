@@ -1,6 +1,7 @@
 networks:
-  monitoring-net:
-    external: true
+  
+  zabbix-net:
+    driver: bridge
 
 services:
   # Base de datos donde Zabbix guarda toda su configuración, histórico de
@@ -10,7 +11,7 @@ services:
     container_name: zabbix-postgres
     restart: unless-stopped
     networks:
-      - monitoring-net
+      - zabbix-net
     environment:
       POSTGRES_USER: zabbix
       POSTGRES_PASSWORD: zabbix_pass
@@ -25,7 +26,7 @@ services:
     container_name: zabbix-server
     restart: unless-stopped
     networks:
-      - monitoring-net
+      - zabbix-net
     depends_on:
       - postgres
     environment:
@@ -43,7 +44,7 @@ services:
     container_name: zabbix-web
     restart: unless-stopped
     networks:
-      - monitoring-net
+      - zabbix-net 
     depends_on:
       - postgres
       - zabbix-server
@@ -57,21 +58,6 @@ services:
     ports:
       - "8081:8080" # acceso al dashboard: http://localhost:8081
 
-  grafana:
-    image: grafana/grafana:latest
-    container_name: grafana
-    restart: unless-stopped
-    networks:
-      - monitoring-net
-    depends_on:
-      - zabbix-server
-    enviroment:
-      GF_INSTALL_PLUGINS: "alexanderzobnin-zabbix-app"
-    ports:
-      - "3001:3000"
-    volumes:
-      - grafana_data:/var/lib/grafana
-
 volumes:
   zabbix_db_data:
-  grafana_data:
+
